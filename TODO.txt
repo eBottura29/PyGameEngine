@@ -1,0 +1,7 @@
+TODO (V = done, X = not done):
+1. collision detection funcs                        (V)
+1.1. check collision between rects, circles
+2. grid utils                                       (V)
+3. a* pathfinding                                   (X)
+4. layered renderer class                           (X)
+5. gradient func                                    (X)
