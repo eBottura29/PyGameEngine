@@ -29,3 +29,16 @@
 ### ```circle_collision(circle1, cirlce2)```
 > Checks for collisions between two circles
 > Both params should be Circle objects (explained later)
+# CLASSES:
+## ``Color(r, g, b)``
+> Color object with red, green and blue params. (regular RGB from 0 to 255)
+> ### ```random()```
+> > Returns a random color
+> ### ```blend(other, ratio=0.5)```
+> > Blends two colors based on a ratio
+> ### ```to_hex(prefix="#")```
+> > Converts color to hexadecimal string
+> ### ```to_hsl(hue_angle=True)```
+> > Converts RGB to HSL (Hue, Saturation, Lightness)
+> ### ```get_tup()```
+> > Returns the color as a tuple (r, g, b)
