@@ -57,6 +57,18 @@ def update() -> bool:
 
 
 def run():
+    global SCREEN, clock, delta_time, arial
+
+    # PyGame Setup
+    pygame.init()
+    SCREEN = pygame.display.set_mode(RESOLUTION, pygame.FULLSCREEN if FULLSCREEN else 0)
+    pygame.display.set_caption(game_name)
+    # pygame.display.set_icon(pygame.image.load(ICON_LOCATION))  # Uncomment if an icon is present
+
+    clock = pygame.time.Clock()
+    delta_time = 0.0
+    arial = pygame.font.SysFont("Arial", 32)
+
     running = True
 
     start()

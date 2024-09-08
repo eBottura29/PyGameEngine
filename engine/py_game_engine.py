@@ -2,28 +2,23 @@ import math
 import time
 import random
 import pygame
+import json
 
 # Screen Resolution and Setup Constants
 RESOLUTION = (2560, 1440)
 WIDTH, HEIGHT = RESOLUTION
 FPS = 165
 FULLSCREEN = True
-GAME_VERSION = "1.0"
-game_name = "My Game"
-icon_location = "./assets/"
+
+with open("./engine/assets/settings.json", "r", encoding="utf-8") as f:
+    settings = json.load(f)
+
+game_version = settings["game_version"]
+game_name = settings["game_name"]
+icon_location = "/assets/"
 
 # Print app name and version at the start
-print(f"{game_name} {GAME_VERSION}")
-
-# PyGame Setup
-pygame.init()
-SCREEN = pygame.display.set_mode(RESOLUTION, pygame.FULLSCREEN if FULLSCREEN else 0)
-pygame.display.set_caption(game_name)
-# pygame.display.set_icon(pygame.image.load(ICON_LOCATION))  # Uncomment if an icon is present
-
-clock = pygame.time.Clock()
-delta_time = 0.0
-arial = pygame.font.SysFont("Arial", 32)
+print(f"{game_name} {game_version}")
 
 
 def timer(func):
