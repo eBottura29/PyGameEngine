@@ -443,14 +443,3 @@ def circle_collsion(circle1: Circle, circle2: Circle):
         return False
 
     return True
-
-
-def run(start, update):
-    running = True
-
-    # Run the start function the first frame
-    start()
-
-    while running:
-        # Run the update function every frame
-        running = update()
