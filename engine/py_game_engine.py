@@ -8,22 +8,22 @@ RESOLUTION = (2560, 1440)
 WIDTH, HEIGHT = RESOLUTION
 FPS = 165
 FULLSCREEN = True
-APP_VERSION = "1.0"
-APP_NAME = "My App"
-ICON_LOCATION = ""
+GAME_VERSION = "1.0"
+game_name = "My Game"
+icon_location = "./assets/"
 
 # Print app name and version at the start
-print(f"{APP_NAME} {APP_VERSION}")
+print(f"{game_name} {GAME_VERSION}")
 
 # PyGame Setup
 pygame.init()
 SCREEN = pygame.display.set_mode(RESOLUTION, pygame.FULLSCREEN if FULLSCREEN else 0)
-pygame.display.set_caption(APP_NAME)
+pygame.display.set_caption(game_name)
 # pygame.display.set_icon(pygame.image.load(ICON_LOCATION))  # Uncomment if an icon is present
 
 clock = pygame.time.Clock()
 delta_time = 0.0
-font = pygame.font.SysFont("Arial", 32)
+arial = pygame.font.SysFont("Arial", 32)
 
 
 def timer(func):

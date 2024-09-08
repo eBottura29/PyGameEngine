@@ -1,6 +1,3 @@
-import shutil
-
-
 def create(name: str = "new_script.py", dest_path: str = "./scripts/", src_path: str = "./assets/default_script.txt"):
     with open(src_path, "r") as f:
         contents = f.readlines()
