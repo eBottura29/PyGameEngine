@@ -52,6 +52,6 @@ while True:
             print("\nThanks for using PyGameEngine!")
             break
         case _:
-            print("Operation not recognized... Try again.")
+            print("\nOperation not recognized... Try again.")
 
     print_operations()
