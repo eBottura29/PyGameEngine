@@ -1,3 +1,5 @@
+## DOCUMENTATION IS CURRENTLY INCOMPLETE
+
 # HOW TO RUN:
 1. Run terminal_interface.py
 2. Follow the instructions
@@ -32,6 +34,37 @@
 # CLASSES:
 ## ``Color(r, g, b)``
 > Color object with red, green and blue params. (regular RGB from 0 to 255)
+> 
+> colors.BLACK = ```rgb(0,0,0)```
+> 
+> colors.DARK_GRAY = ```rgb(85,85,85)```
+> 
+> colors.LIGHT_GRAY = ```rgb(170,170,170)```
+> 
+> colors.WHITE = ```rgb(255,255,255)```
+> 
+> colors.RED = ```rgb(255,0,0)```
+> 
+> colors.LIME = ```rgb(0,255,0)```
+> 
+> colors.BLUE = ```rgb(0,0,255)```
+> 
+> colors.YELLOW = ```rgb(255,255,0)```
+> 
+> colors.PINK = ```rgb(255,0,255)```
+> 
+> colors.LIGHT_BLUE = ```rgb(0,255,255)```
+> 
+> colors.GREEN = ```rgb(0,128,0)```
+> 
+> colors.PURPLE = ```rgb(128,0,128)```
+> 
+> colors.DARK_BLUE = ```rgb(0,0,128)```
+> 
+> colors.ORANGE = ```rgb(255,170,0)```
+> 
+> colors.BROWN = ```rgb(128,60,0)```
+> 
 > ### ```random()```
 > > Returns a random color
 > ### ```blend(other, ratio=0.5)```
@@ -42,3 +75,5 @@
 > > Converts RGB to HSL (Hue, Saturation, Lightness)
 > ### ```get_tup()```
 > > Returns the color as a tuple (r, g, b)
+## ``Vector2(x, y)``
+> Vector object in 2 dimensions.
